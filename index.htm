@@ -12,5 +12,23 @@
 
 <div id="result"></div>
 
+    <script>
+    function validateForm() {
+  var x = document.getElementById("fname");
+  var op = document.getElementById("result");
+    if (x.value == "hello") {
+    op.innerHTML = "Win";
+ 
+  } else{
+    op.innerHTML = "Fail";
+    
+  }
+}
+var submitButton = document.getElementById('submit');
+
+submitButton.onclick = function(){
+	validateForm();
+}
+    </script>
   </body>
 <html>
